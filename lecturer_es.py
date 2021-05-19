@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
+def home():
     curr_time = datetime.now()
     hour = int(curr_time.strftime("%H"))
 
@@ -17,6 +17,11 @@ def hello_world():
         message = "Evening"
 
     return render_template("home.html", message=message)
+
+
+@app.route("/get-to-know")
+def get_info():
+    return render_template("information.html")
 
 
 app.run(debug=True)
