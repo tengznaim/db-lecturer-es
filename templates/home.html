@@ -8,24 +8,21 @@
       rel="stylesheet"
       href="{{url_for('static',filename='styles/home.css')}}"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Database Expert System | Home</title>
+    <title>DB Lecturer ES</title>
   </head>
   <body>
     <div class="home-container">
-      <h1 id="welcome-text">
-        Good {{message}}! Are you ready to learn Database?
-      </h1>
-      <button id="start-button">Get Started</button>
-      <img
-        src="{{url_for('static',filename='assets/Homepage.svg')}}"
-        alt="home-graphic"
-        id="home-graphic"
-      />
+      <div class="home-text">
+        <h1 id="home-greeting">
+          Good {{message}}! <br />
+          <span id="home-welcome">Welcome to DB-ES!</span>
+        </h1>
+        <button id="home-button">Get Started</button>
+      </div>
     </div>
   </body>
 </html>

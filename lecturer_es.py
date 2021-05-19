@@ -19,4 +19,4 @@ def hello_world():
     return render_template("home.html", message=message)
 
 
-app.run()
+app.run(debug=True)

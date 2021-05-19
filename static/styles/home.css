@@ -1,53 +1,48 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .home-container {
   height: 100vh;
   position: relative;
+  background-image: linear-gradient(to bottom right, #1b22e8, #b2478f);
 }
 
-#welcome-text {
+.home-text {
   position: absolute;
-  left: 50%;
-  color: #699dee;
-  font-weight: bold;
-  top: 5%;
-  transform: translate(-50%);
-  width: 50%;
-  font-size: 50px;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#start-button {
-  height: 75px;
-  width: 200px;
-  border: none;
-  border-radius: 20px;
-  font-size: 25px;
+#home-greeting {
+  font-size: 75px;
   color: white;
-  background-color: #699dee;
-  position: absolute;
-  left: 50%;
-  top: 35%;
-  transform: translate(-50%, -35%);
+  margin-bottom: 20px;
+}
+
+#home-welcome {
+  font-size: 75px;
+  font-weight: normal;
+  color: white;
+}
+
+#home-button {
+  font-size: 35px;
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 20px;
+  color: white;
+  background: none;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-#start-button:hover {
-  color: #699dee;
-  background-color: white;
-  border: 5px solid #699dee;
-}
-
-#home-graphic {
-  height: 50vh;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
+#home-button:hover {
+  color: #1b22e8;
+  background: white;
 }
