@@ -30,7 +30,7 @@ def home():
 def get_info():
     if request.method == "POST":
         student_info["Name"] = request.form["name"]
-        student_info["Matric_Number"] = request.form["name"]
+        student_info["Matric_Number"] = request.form["matric-number"]
         student_info["Year"] = request.form.get("year-of-study")
         student_info["Course"] = request.form.get("course")
         print(student_info)
