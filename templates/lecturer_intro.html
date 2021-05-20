@@ -18,11 +18,19 @@
           I'm Dr E-Khalit, your virtual Database lecturer! <br />
           {{main_question}}
         </p>
-        <div class="intro-items intro-grid">
-          {%for question in sub_questions%}
-          <button class="intro-items" id="grid-button">{{question}}</button>
+        <form class="intro-items intro-grid" method="POST">
+          {%for response in responses%}
+          <button
+            type="submit"
+            name="response-button"
+            value="{{response}}"
+            class="intro-items"
+            id="grid-button"
+          >
+            {{response}}
+          </button>
           {%endfor%}
-        </div>
+        </form>
       </div>
     </div>
   </body>

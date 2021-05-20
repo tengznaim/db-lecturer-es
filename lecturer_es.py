@@ -14,8 +14,11 @@ student_info = {
     "Course": "",
 }
 
+curr_question = list(data.keys())[0]
+curr_response = data[curr_question]
 
-@app.route('/')
+
+@ app.route('/')
 def home():
     curr_time = datetime.now()
     hour = int(curr_time.strftime("%H"))
@@ -30,7 +33,7 @@ def home():
     return render_template("home.html", message=message)
 
 
-@app.route("/get-to-know", methods=["POST", "GET"])
+@ app.route("/get-to-know", methods=["GET", "POST"])
 def get_info():
     if request.method == "POST":
         student_info["Name"] = request.form["name"]
@@ -42,11 +45,28 @@ def get_info():
     return render_template("information.html")
 
 
-@app.route("/lecturer-intro")
+@ app.route("/lecturer-intro", methods=["GET", "POST"])
 def intro():
-    main_question = list(data.keys())[0]
-    sub_questions = list(data[main_question].keys())
-    return render_template("lecturer_intro.html", name=student_info["Name"], main_question=main_question, sub_questions=sub_questions)
+    if request.method == "POST":
+        response = request.form["response-button"]
+
+        global curr_response
+        global curr_question
+
+        next_decision = curr_response[response]
+
+        if isinstance(next_decision, dict):
+            question = list(next_decision.keys())[0]
+            next_responses = next_decision[question]
+            curr_response = next_responses
+            curr_question = question
+            return render_template("lecturer_intro.html", name=student_info["Name"], main_question=question, responses=next_responses)
+        else:
+            return next_decision
+
+    else:
+        responses = list(curr_response.keys())
+        return render_template("lecturer_intro.html", name=student_info["Name"], main_question=curr_question, responses=responses)
 
 
 app.run(debug=True)
