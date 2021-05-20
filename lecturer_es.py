@@ -33,8 +33,14 @@ def get_info():
         student_info["Matric_Number"] = request.form["matric-number"]
         student_info["Year"] = request.form.get("year-of-study")
         student_info["Course"] = request.form.get("course")
-        print(student_info)
+        return redirect("/lecturer-intro")
+
     return render_template("information.html")
+
+
+@app.route("/lecturer-intro")
+def intro():
+    return render_template("lecturer_intro.html", name=student_info["Name"])
 
 
 app.run(debug=True)
