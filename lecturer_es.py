@@ -1,5 +1,9 @@
 from flask import Flask, render_template, url_for, request, redirect
 from datetime import datetime
+import json
+
+with open('db.json') as f:
+    data = json.load(f)
 
 app = Flask(__name__)
 
@@ -40,7 +44,9 @@ def get_info():
 
 @app.route("/lecturer-intro")
 def intro():
-    return render_template("lecturer_intro.html", name=student_info["Name"])
+    main_question = list(data.keys())[0]
+    sub_questions = list(data[main_question].keys())
+    return render_template("lecturer_intro.html", name=student_info["Name"], main_question=main_question, sub_questions=sub_questions)
 
 
 app.run(debug=True)

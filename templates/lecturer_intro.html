@@ -16,18 +16,12 @@
         <h1 class="intro-items" id="intro-greeting">Hello {{name}}!</h1>
         <p class="intro-items" id="intro-description">
           I'm Dr E-Khalit, your virtual Database lecturer! <br />
-          What would you like to learn today?
+          {{main_question}}
         </p>
         <div class="intro-items intro-grid">
-          <button class="intro-items" id="grid-button">
-            I want to know more about the course
-          </button>
-          <button class="intro-items" id="grid-button">
-            I want to learn about Database topics
-          </button>
-          <button class="intro-items" id="grid-button">
-            I want to develop a Database
-          </button>
+          {%for question in sub_questions%}
+          <button class="intro-items" id="grid-button">{{question}}</button>
+          {%endfor%}
         </div>
       </div>
     </div>

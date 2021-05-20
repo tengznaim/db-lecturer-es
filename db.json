@@ -1,90 +1,98 @@
 {
-	"What do you want to know about Database subject?" : {
-		"I want to know about the course overview" : {
-			"What do you want to know about it?" : {
-				"I want to know about the method of teaching" : "Online class",
-				"I want to know about the prerequisite" : "",
-				"I want to know about the learning outcome" : "",
-				"I want to know about the attendance requirement" : "",
-				"I want to know about the assessments" : {
-					"This course contains 3 types of assessments Which one do you want to know about?" : {
-						"I want to know about the tutorial" : {
-							"What do you want to know about it?" : {
-								"I want to know about the submission date" : "",
-								"I want to know about the assignment format" : "",
-								"I want to know about the weightage of the assignment" : ""
-							}
-						},
-						"I want to know about the individual assignments" : {
-							"What do you want to know about it?" : {
-								"I want to know about the submission date" : "",
-								"I want to know about the assignment format" : "",
-								"I want to know about the weightage of the assignment" : ""
-							}
-						},
-						"I want to know about the group assignments" : {
-							"What do you want to know about it?" : {
-								"I want to know about the assignment description" : "",
-								"I want to know about the number of group members per group" : "",
-								"I want to know about the weightage of the assignment" : ""
-							}
-						}
-					}
-				}
-			}
-		},
-		"I want to learn database topics" : {
-			"This course contains many topics Which topic do you want to know about?" : {
-				"I want to know about the Introduction to Database topic" : {
-					"What do you want to know about it?" : {
-						"What is database?" : "",
-						"I want to know about DBMS" : {
-							"What do you want to know about it?" : {
-								"What is the roles of DBMS?" : "",
-								"What is the advantages of DBMS?" : "",
-								"What is the functions of DBMS?" : ""
-							}
-						},
-						"I want to know about types of database" : "",
-						"What is data anomaly?" : ""
-					}
-				},
-				"I want to know about the Relational Data Model topic" : {
-					"What do you want to know about it?" : {
-						"I want to know about keys in database" : {
-							"What do you want to know about it?" : {
-								"What is primary key?" : "",
-								"What is foreign key?" : ""
-							}
-						},
-						"I want to know about database integrity" : {
-							"What do you want to know about it?" : {
-								"What is entity integrity?" : "",
-								"What is referential integrity?" : ""
-							}
-						}
-					}
-				},
-				"I want to know about the Normalization topic" : {
-					"What do you want to know about it?" : {
-						"What is normalization and its function?" : "",
-						"What is the difference between 1NF, 2NF and 3NF?" : "",
-						"How to convert between normal forms?" : ""
-					}
-				},
-				"I want to know about the Introduction to SQL topic" : {
-					"What do you want to know about it?" : {
-						"How to select row from database?" : "",
-						"How to update row in database?" : "",
-						"How to delete row in database?" : "",
-						"How to join table in database?" : ""
-					} 
-				}
-			}
-		},
-		"I want to develop a database" : {
-			"sql" : ["Working with complex queries", "High transaction application", "Data consistency is important"],
-			"nosql" : ["Need highly flexible database", "Not concern about data inconsistency", "Need high scalability"]
-		}
-	}
+  "What would you like to learn today?": {
+    "I want to know more about the course": {
+      "What do you want to know about it?": {
+        "I want to know about the method of teaching": "Online class",
+        "I want to know about the prerequisite": "",
+        "I want to know about the learning outcome": "",
+        "I want to know about the attendance requirement": "",
+        "I want to know about the assessments": {
+          "This course contains 3 types of assessments Which one do you want to know about?": {
+            "I want to know about the tutorial": {
+              "What do you want to know about it?": {
+                "I want to know about the submission date": "",
+                "I want to know about the assignment format": "",
+                "I want to know about the weightage of the assignment": ""
+              }
+            },
+            "I want to know about the individual assignments": {
+              "What do you want to know about it?": {
+                "I want to know about the submission date": "",
+                "I want to know about the assignment format": "",
+                "I want to know about the weightage of the assignment": ""
+              }
+            },
+            "I want to know about the group assignments": {
+              "What do you want to know about it?": {
+                "I want to know about the assignment description": "",
+                "I want to know about the number of group members per group": "",
+                "I want to know about the weightage of the assignment": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "I want to learn about the topics in Database": {
+      "This course contains many topics Which topic do you want to know about?": {
+        "I want to know about the Introduction to Database topic": {
+          "What do you want to know about it?": {
+            "What is database?": "",
+            "I want to know about DBMS": {
+              "What do you want to know about it?": {
+                "What is the roles of DBMS?": "",
+                "What is the advantages of DBMS?": "",
+                "What is the functions of DBMS?": ""
+              }
+            },
+            "I want to know about types of database": "",
+            "What is data anomaly?": ""
+          }
+        },
+        "I want to know about the Relational Data Model topic": {
+          "What do you want to know about it?": {
+            "I want to know about keys in database": {
+              "What do you want to know about it?": {
+                "What is primary key?": "",
+                "What is foreign key?": ""
+              }
+            },
+            "I want to know about database integrity": {
+              "What do you want to know about it?": {
+                "What is entity integrity?": "",
+                "What is referential integrity?": ""
+              }
+            }
+          }
+        },
+        "I want to know about the Normalization topic": {
+          "What do you want to know about it?": {
+            "What is normalization and its function?": "",
+            "What is the difference between 1NF, 2NF and 3NF?": "",
+            "How to convert between normal forms?": ""
+          }
+        },
+        "I want to know about the Introduction to SQL topic": {
+          "What do you want to know about it?": {
+            "How to select row from database?": "",
+            "How to update row in database?": "",
+            "How to delete row in database?": "",
+            "How to join table in database?": ""
+          }
+        }
+      }
+    },
+    "I want to develop a Database": {
+      "sql": [
+        "Working with complex queries",
+        "High transaction application",
+        "Data consistency is important"
+      ],
+      "nosql": [
+        "Need highly flexible database",
+        "Not concern about data inconsistency",
+        "Need high scalability"
+      ]
+    }
+  }
 }
