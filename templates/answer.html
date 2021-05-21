@@ -13,7 +13,12 @@
   <body>
     <div class="answer-container">
       <div class="answer-content">
-        <h1 class="answer-items" id="answer">{{question}}</h1>
+		{% if  is_develop_db %}
+			<h1 class="answer-items" id="answer">What type of database I should use?</h1>
+		{% else %}
+			<h1 class="answer-items" id="answer">{{question}}</h1>
+		{% endif %}
+        
         <div class="answer-items answer-box">
           <p>{{answer}}</p>
         </div>
