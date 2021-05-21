@@ -95,65 +95,68 @@ def questions():
 
 @ app.route("/answer", methods=["GET", "POST"])
 def answer():
-	if request.method == "POST":
+    if request.method == "POST":
 
-		global curr_question
-		global curr_response
+        global curr_question
+        global curr_response
 
-		curr_question = list(data.keys())[0]
-		curr_response = data[curr_question]
+        curr_question = list(data.keys())[0]
+        curr_response = data[curr_question]
 
-		return redirect("/introduction")
+        return redirect("/introduction")
 
-	print(request.args)
-	return render_template("answer.html", is_develop_db=request.args['is_develop_db'], answer=request.args['ans'])
+    print(request.args)
+
+    if "question" in request.args:
+        return render_template("answer.html", question=request.args["question"], answer=request.args["answer"])
+    return render_template("answer.html", question=curr_question, answer=final_answer)
 
 
 @ app.route("/develop-db", methods=["GET", "POST"])
 def develop_db():
-	db_data = data['What would you like to learn today?']['I want to develop a Database']
-	db_rules = []
-	db_rules.extend(rule for rule in db_data['sql']) 
-	db_rules.extend(rule for rule in db_data['nosql']) 
+    db_data = data['What would you like to learn today?']['I want to develop a Database']
+    db_rules = []
+    db_rules.extend(rule for rule in db_data['sql'])
+    db_rules.extend(rule for rule in db_data['nosql'])
 
-	if request.method == "POST":
-		rule_ans = request.form.to_dict()
-		
-		ans_text = {'sql':'Database that you shoulde use is SQL Database',
-		'nosql':'Database that you shoulde use is NoSQL Database',
-		'Not valid':'There is no database type that can fulfill your requirements. Please try again.',
-		None:'Please insert atleast one requirement and try again.'}
-		result_db = None
-		for rule in db_rules:
-			if rule_ans[rule] == 'Yes':
-				if rule in db_data['sql']:
-					if result_db is None:
-						result_db = 'sql'
-					elif result_db != 'sql':
-						result_db = 'Not valid'
-						break
-				else:
-					if result_db is None:
-						result_db = 'nosql'
-					elif result_db != 'nosql':
-						result_db = 'Not valid'
-						break
-			elif rule_ans[rule] == 'No':
-				if rule in db_data['sql']:
-					if result_db is None:
-						result_db = 'nosql'
-					elif result_db == 'sql':
-						result_db = 'Not valid'
-						break
-				else:
-					if result_db is None:
-						result_db = 'sql'
-					elif result_db == 'nosql':
-						result_db = 'Not valid'
-						break
-		result_db = ans_text[result_db]
-		return redirect(url_for('.answer', is_develop_db=True, ans=result_db))
-	return render_template("develop_db.html", db_rules= db_rules)
+    if request.method == "POST":
+        rule_ans = request.form.to_dict()
+
+        ans_text = {'sql': 'Database that you shoulde use is SQL Database',
+                    'nosql': 'Database that you shoulde use is NoSQL Database',
+                    'Not valid': 'There is no database type that can fulfill your requirements. Please try again.',
+                    None: 'Please insert atleast one requirement and try again.'}
+        result_db = None
+        for rule in db_rules:
+            if rule_ans[rule] == 'Yes':
+                if rule in db_data['sql']:
+                    if result_db is None:
+                        result_db = 'sql'
+                    elif result_db != 'sql':
+                        result_db = 'Not valid'
+                        break
+                else:
+                    if result_db is None:
+                        result_db = 'nosql'
+                    elif result_db != 'nosql':
+                        result_db = 'Not valid'
+                        break
+            elif rule_ans[rule] == 'No':
+                if rule in db_data['sql']:
+                    if result_db is None:
+                        result_db = 'nosql'
+                    elif result_db == 'sql':
+                        result_db = 'Not valid'
+                        break
+                else:
+                    if result_db is None:
+                        result_db = 'sql'
+                    elif result_db == 'nosql':
+                        result_db = 'Not valid'
+                        break
+        result_db = ans_text[result_db]
+        return redirect(url_for('.answer', question="What type of Database should I use?", answer=result_db))
+    return render_template("develop_db.html", db_rules=db_rules)
 
 
 app.run(debug=True)
