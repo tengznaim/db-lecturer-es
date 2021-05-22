@@ -51,6 +51,9 @@ def intro():
     if request.method == "POST":
         response = request.form["response-button"]
 
+        if response == "I want to develop a Database":
+            return redirect("/develop-db")
+
         global curr_response
         global curr_question
 

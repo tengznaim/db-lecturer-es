@@ -38,51 +38,48 @@
 
 .questions-items {
   color: #f9f8fd;
+  margin: 10px;
   z-index: 2;
 }
 
-.questions-grid {
-  margin: 40px 0px;
-  width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 40px;
-  row-gap: 40px;
-}
-
-#question {
-  width: 50vw;
+#submit-button {
+  font-size: 20px;
+  padding: 10px 40px;
+  background: none;
+  border: 3px solid #f2f2f2;
   color: #f2f2f2;
-  font-size: 3em;
-}
-
-#grid-button {
-  background-color: #f2f2f2;
-  color: #664ad2;
-  font-weight: bold;
-  font-size: 1.5em;
-  border: none;
   border-radius: 10px;
   cursor: pointer;
-  padding: 30px;
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-#grid-button:hover {
-  transform: scale(1.1);
+#submit-button:hover {
+  background: #f2f2f2;
+  color: #664ad2;
 }
 
-.rule-selection{
-	display: inline-block;
-	margin-top: 40px;
-	margin-bottom: 40px;
+#develop-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
 }
 
-.rule-text{
-	width: 70%;
-	/* font-size: 80px; */
+.rule-selection {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
 }
 
-.rule-text{
-	width: 30%;
+.rule-text {
+  font-size: 1.5em;
+}
+
+.rule-ans {
+  outline: none;
+  color: #664ad2;
+  background-color: #f2f2f2;
+  padding: 10px;
 }
