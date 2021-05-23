@@ -47,6 +47,7 @@
   height: 50%;
   background: #f9f8fd;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
@@ -68,4 +69,8 @@
 #back-button:hover {
   background: #f2f2f2;
   color: #664ad2;
+}
+
+#answer-text {
+  width: 90%;
 }

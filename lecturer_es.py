@@ -108,8 +108,6 @@ def answer():
 
         return redirect("/introduction")
 
-    print(request.args)
-
     if "question" in request.args:
         return render_template("answer.html", question=request.args["question"], answer=request.args["answer"])
     return render_template("answer.html", question=curr_question, answer=final_answer)
