@@ -57,15 +57,15 @@
             "I want to know about DBMS": {
               "What do you want to know about it?": {
                 "What is the roles of DBMS?": 
-                  "Intermediary between the user and the database
-                  "Enables data to be shared 
+                  "Intermediary between the user and the database",
+                  "Enables data to be shared",
                   "Presents the end user with an integrated view of the data",
                   "Receives and translates application requests into operations required to fulfill the requests",
                   "Hides database’s internal complexity from the application programs and users",
                 "What is the advantages of DBMS?":
-                  "Better data integration and less data inconsistency
-                  "Data inconsistency: Different versions of the same data appear in different places
-                  "Increased end-user productivity
+                  "Better data integration and less data inconsistency",
+                  "Data inconsistency: Different versions of the same data appear in different places",
+                  "Increased end-user productivity",
                   "Improved: Data sharing, Data security, Data access, Decision making, Data quality: Promoting accuracy, validity, and timeliness of data",
                 "What is the functions of DBMS?": 
                   "Data dictionary management: Data dictionary: Stores definitions of the data elements and their relationships",
