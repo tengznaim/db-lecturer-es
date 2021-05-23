@@ -177,8 +177,23 @@
                 "Eliminate the repeating groups (Group of multiple entries of same type can exist for any single key attribute occurrence)"
                 "Identify the primary key"
                   "-A primary is a single column value used to identify a database record uniquely."
-                "Identify all dependencies
-
+                "Identify all dependencies"
+              "Conversion to 2NF"
+                "Make new tables to eliminate partial dependencies"
+                  "Write Each Key Component on a Separate Line"
+                  "Write each key component on separate line, then write original (composite) key on last line"
+                  "Each component will become key in new table"
+                  "Determine those attributes that are dependent on other attributes"
+                "Table is in 2NF when it is in 1NF and has no partial dependencies"
+                  "No attribute is dependent on only portion of primary key"
+              "Conversion 3NF"
+                "Make new tables to eliminate transitive dependencies "
+                "Identify Each New Determinant.For every transitive dependency, write its determinant as PK for new table"
+                "Determinant: Any attribute whose value determines other values within a row"
+                "Reassign corresponding dependent attributes"
+                "Table is in 3NF when it:"
+                  "Is in 2NF"
+                  "Contains no transitive dependencies"
           }
         },
         "I want to know about the Introduction to SQL topic": {
