@@ -207,10 +207,48 @@
         },
         "I want to know about the Introduction to SQL topic": {
           "What do you want to know about it?": {
-            "How to select row from database?": "",
-            "How to update row in database?": "",
-            "How to delete row in database?": "",
-            "How to join table in database?": ""
+            "What is SQL?": [
+              "SQL stands for Structured Query Language",
+              "SQL lets you access and manipulate databases",
+              "Further reading: https://www.w3schools.com/sql/"
+            ],
+            "What is SQL SELECT statement?": [
+              "The SELECT statement is used to select data from a database.",
+              "The data returned is stored in a result table, called the result-set.",
+              "Syntax: SELECT column 1, column2, ... FROM table_name;",
+              "Example: SELECT CustomerName, City FROM Customers;"
+            ],
+            "What is SQL WHERE clause?": [
+              "The WHERE clause is used to filter records.",
+              "It is used to extract only those records that fulfill a specified condition.",
+              "Syntax: SELECT column1, column2, … FROM table_name WHERE condition;",
+              "Example: SELECT * FROM Customers WHERE Country='Mexico';"
+            ],
+            "What is SQL AND, OR, NOT operators?": [
+              "The WHERE clause can be combined with AND, OR, and NOT operators.",
+              "The AND operator displays a record if all the conditions separated by AND are TRUE.",
+              "The OR operator displays a record if any of the conditions separated by OR is TRUE.",
+              "The NOT operator displays a record if the condition(s) is NOT TRUE.",
+              "Syntax: SELECT column1, column2, … FROM table_name WHERE condition1 AND condition2 AND condition3 ...;",
+              "Syntax: SELECT column1, column2, … FROM table_name WHERE condition1 OR condition2 OR condition3 ...;",
+              "Syntax: SELECT column1, column2, … FROM table_name WHERE NOT condition;"
+            ],
+            "What is SQL UPDATE statement?": [
+              "The UPDATE statement is used to modify the existing records in a table.",
+              "Syntax: UPDATE table_name SET column1 = value1, column2 = value2, … WHERE condition;",
+              "Example: UPDATE Customers SET ContactName = 'Alfred Schmidt', City= 'Frankfurt' WHERE CustomerID = 1;"
+            ],
+            "What is SQL DELETE statement?": [
+              "The DELETE statement is used to delete existing records in a table.",
+              "Syntax: DELETE FROM table_name WHERE condition;",
+              "Example: DELETE FROM Customers WHERE CustomerName = 'Alfreds Futterkiste';"
+            ],
+            "What is SQL JOIN statement?": [
+              "A JOIN clause is used to combine rows from two or more tables, based on a related column between them.",
+              "The INNER JOIN keyword selects records that have matching values in both tables.",
+              "Syntax: SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.column_name = table2.column_name;",
+              "Example: SELECT Orders.OrderID, Customers.CustomerName FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;"
+            ]
           }
         }
       }
