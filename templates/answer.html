@@ -14,7 +14,8 @@
     <div class="answer-container">
       <div class="answer-content">
         <div class="answer-items answer-box">
-          {% if answer is iterable %} {% for text in answer%}
+          {% if answer is iterable and answer is not string%} {% for text in
+          answer%}
           <p id="answer-text">● {{text}}</p>
           {% endfor %} {% else %}
           <p id="answer-text">{{answer}}</p>
