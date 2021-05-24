@@ -135,12 +135,14 @@
             ],
             "I want to know about relational model?": "Produced an automatic transmission database that replaced standard transmission databases based on a relation.",
             "I want to know about Entity Relationship Diagram (ERD)": {
-              "What is ERD?": "Uses graphic representations to model database components.",
-              "ERD Model Notation": [
-                "Chen Notation",
-                "Crow's Foot Notation",
-                "UML Class Diagram Notation"
-              ]
+				"What do you want to know about it?" : {
+					"What is ERD?": "Uses graphic representations to model database components.",
+					"ERD Model Notation": [
+						"Chen Notation",
+						"Crow's Foot Notation",
+						"UML Class Diagram Notation"
+					]
+				}
             },
             "I want to know about keys in Database?": [
               "Concept of Keys in DBMS: Please watch it here: https://www.youtube.com/watch?v=p3yJZH8_bsc",
