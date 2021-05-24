@@ -2,18 +2,9 @@
   "What would you like to learn today?": {
     "I want to know more about the course": {
       "What do you want to know about it?": {
-        "I want to know about the method of teaching": [
-          "During the current pandemic period, classes are currently held online through Microsoft Teams.",
-          "The lecture will divided into 3 groups and will held on Tuesday, 1.00-3.00 pm.",
-          "The tutorial will divided into 6 groups and will held on Thursday, 1.00-4.00pm."
-        ],
+        "I want to know about the method of teaching": "During the current pandemic period, classes are currently held online through Microsoft Teams. The lecture will divided into 3 groups and will held on Tuesday, 1.00-3.00 pm. The tutorial will divided into 6 groups and will held on Thursday, 1.00-4.00pm.",
         "I want to know about the prerequisite": "There is no prerequisite for this course.",
-        "I want to know about the learning outcome": [
-          "Students can describe the basic concepts in database.",
-          "Identify a database management system (DBMS).",
-          "Develop a database system for an application or small business.",
-          "Implement the database design using a Database Management System (DBMS)."
-        ],
+        "I want to know about the learning outcome": "Students can describe the basic concepts in database. Next, identify a database management system (DBMS). After that student can develop a database system for an application or small business. Finally, implement the database design using a Database Management System (DBMS).",
         "I want to know about the attendance requirement": "Attendance is compulsory and students must record their own attendance via Spectrum according to their lecture group.",
         "I want to know about the assessments": {
           "This course contains 3 types of assessments Which one do you want to know about?": {
@@ -33,11 +24,7 @@
             },
             "I want to know about the group assignments": {
               "What do you want to know about it?": {
-                "I want to know about the assignment description": [
-                  "Students need to find organization and conduct online interview to develop a database and prepare a report",
-                  "Report submission and video presentation during Week 14.",
-                  "Peer Assessment will be done to assess participation."
-                ],
+                "I want to know about the assignment description": "Students need to find organization and conduct online interview to develop a database and prepare a report. Report submission and video presentation during Week 14. Peer Assessment will be done to assess participation.",
                 "I want to know about the number of group members per group": "Each group MUST consists 5 members (mixed races and gender).",
                 "I want to know about the weightage of the assignment": "15% for presentation of project video and 10% for project report."
               }
@@ -116,57 +103,15 @@
         },
         "I want to know about the Relational Data Model topic": {
           "What do you want to know about it?": {
-            "I want to know about the important definition in this topic?": [
-              "Data modelling: Iterative and progressive process of creating a specific data model for a determined problem domain.",
-              "Data models: Simple representations of complex real-world data structures.",
-              "Model: Abstraction of a real-world object or event."
-            ],
-            "I want to know about the importance of data models": [
-              "It act as communication tools.",
-              "Give an overall view of the database.",
-              "Organize data for various users.",
-              "An abstraction for the creation of good database."
-            ],
-            "I want to know about data model basic building blocks": [
-              "Entity: Unique and distinct object used to collect and store data.",
-              "Attribute: Characteristic of an entity.",
-              "Relationship: Describes an association among entities. It can be One-to-Many (1:M), Many-to-Many (M:M) and One-to-One (1:1).",
-              "Constraint: Set of rules to ensure data integrity."
-            ],
+            "I want to know about the important definition in this topic?": "Data modelling is an iterative and progressive process of creating a specific data model for a determined problem domain. Data models is a simple representations of complex real-world data structures. Model is an abstraction of a real-world object or event.",
+            "I want to know about the importance of data models": "It act as communication tools. Next, it give an overall view of the database. After that, it can be used to organize data for various users. Finally, it act as an abstraction for the creation of good database.",
+            "I want to know about data model basic building blocks": "Entity is a unique and distinct object used to collect and store data. Attribute is a characteristic of an entity. Relationship describes an association among entities. It can be One-to-Many (1:M), Many-to-Many (M:M) and One-to-One (1:1). Constraint is a set of rules to ensure data integrity.",
             "I want to know about relational model?": "Produced an automatic transmission database that replaced standard transmission databases based on a relation.",
-            "I want to know about Entity Relationship Diagram (ERD)": {
-				"What do you want to know about it?" : {
-					"What is ERD?": "Uses graphic representations to model database components.",
-					"ERD Model Notation": [
-						"Chen Notation",
-						"Crow's Foot Notation",
-						"UML Class Diagram Notation"
-					]
-				}
-            },
-            "I want to know about keys in Database?": [
-              "Concept of Keys in DBMS: Please watch it here: https://www.youtube.com/watch?v=p3yJZH8_bsc",
-              "Primary Key (PK): Attribute or combination of attributes that uniquely identifies any given row.",
-              "Foreign Key (FK): A field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table."
-            ],
-            "I want to know about types of keys": [
-              "Composite key: Key that is composed of more than one attribute.",
-              "Key attribute: Attribute that is a part of a key.",
-              "Entity integrity: Condition in which each row in the table has its own unique identity.",
-              "Referential integrity: Every reference to an entity instance by another entity instance is valid.",
-              "Null: Absence of any data value that could represent an unknown attribute value, known but missing attribute value and an inapplicable condition."
-            ],
-            "I want to know about relational set operators": [
-              "Select: Unary operator that yields a horizontal subset of a table.",
-              "Project: Unary operator that yields a vertical subset of a table.",
-              "Union: Combines all rows from two tables, excluding duplicate rows.",
-              "Intersect: Yields only the rows that appear in both tables.",
-              "Difference: Yields all rows in one table that are not found in the other table.",
-              "Product: Yields all possible pairs of rows from two tables.",
-              "Join: Allows information to be intelligently combined from two or more tables.",
-              "Divide: Uses one 2-column table as the dividend and one single-column table as the divisor."
-            ],
-            "I want to know about data redundancy": "Relational database facilitates control of data redundancies through use of foreign keys"
+            "I want to know about Entity Relationship Diagram (ERD)": "Uses graphic representations to model database components. It has three Model Notation which are Chen Notation, Crow's Foot Notation and UML Class Diagram Notation.",
+            "I want to know about keys in Database?": "Primary Key (PK): Attribute or combination of attributes that uniquely identifies any given row. Foreign Key (FK): A field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table. Please watch this video for further explaination https://www.youtube.com/watch?v=p3yJZH8_bsc",
+            "I want to know about types of keys": "Composite key is key that is composed of more than one attribute. Key attribute is an attribute that is a part of a key. Entity integrity is a condition in which each row in the table has its own unique identity. Referential integrity means every reference to an entity instance by another entity instance is valid. Null is an absence of any data value that could represent an unknown attribute value, known but missing attribute value and an inapplicable condition.",
+            "I want to know about relational set operators": "SELECT: Unary operator that yields a horizontal subset of a table. PROJECT: Unary operator that yields a vertical subset of a table. UNION: Combines all rows from two tables, excluding duplicate rows. INTERSECT: Yields only the rows that appear in both tables. DIFFERENCE: Yields all rows in one table that are not found in the other table. PRODUCT: Yields all possible pairs of rows from two tables. JOIN: Allows information to be intelligently combined from two or more tables. DIVIDE: Uses one 2-column table as the dividend and one single-column table as the divisor.",
+            "I want to know about data redundancy": "Relational database facilitates control of data redundancies through use of foreign keys."
           }
         },
         "I want to know about the Normalization topic": {
