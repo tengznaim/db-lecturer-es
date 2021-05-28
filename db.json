@@ -86,10 +86,7 @@
             },
             "I want to know about types of database": [
               "Single-user database: Supports one user at a time",
-              "Desktop database: Runs on PC",
               "Multiuser database: Supports multiple users at the same time",
-              "- Workgroup databases: Supports a small number of users or a specific department",
-              "- Enterprise database: Supports many users across many departments",
               "Centralized database: Data is located at a single site",
               "Distributed database: Data is distributed across different sites ",
               "Cloud database: Created and maintained using cloud data services that provide defined performance measures for the database",
@@ -97,12 +94,10 @@
               "Discipline-specific databases: Contains data focused on specific subject areas",
               "Operational database: Designed to support a company’s day-to-day operations",
               "Analytical database: Stores historical data and business metrics used exclusively for tactical or strategic decision making ",
-              "- Data warehouse: Stores data in a format optimized for decision support ",
               "Online analytical processing (OLAP): Enable retrieving, processing, and modeling data from the data warehouse",
               "Business intelligence: Captures and processes business data to generate information that support decision making ",
               "Unstructured data: It exists in their original state",
               "Structured data: It results from formatting ",
-              "- Structure is applied based on type of processing to be performed",
               "Semistructured data: Processed to some extent",
               "Extensible Markup Language (XML): Represents data elements in textual format"
             ],
