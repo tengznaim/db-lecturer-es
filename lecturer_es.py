@@ -124,7 +124,7 @@ def develop_db():
         rule_ans = request.form.to_dict()
 
         ans_text = {'sql': 'Database that you should use is SQL Database. Sample of SQL database are MySQL, Oracle and PostgreSQL.',
-                    'nosql': 'Database that you should use is NoSQL Database. Sample of SQL database are MongoDB and Firestore.',
+                    'nosql': 'Database that you should use is NoSQL Database. Sample of NoSQL database are MongoDB and Firestore.',
                     'Not valid': 'There is no database type that can fulfill your requirements. Please try again.',
                     None: 'Please insert atleast one requirement and try again.'}
         result_db = None
