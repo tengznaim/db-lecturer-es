@@ -44,16 +44,23 @@
 .questions-grid {
   margin: 40px 0px;
   width: 80%;
+  padding: 30px;
+  height: 50vh;
+  overflow: scroll;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
   row-gap: 40px;
 }
 
+.questions-grid::-webkit-scrollbar {
+  display: none;
+}
+
 #question {
-  width: 50vw;
+  width: 60vw;
   color: #f2f2f2;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 #grid-button {
